@@ -53,7 +53,7 @@ if(!empty($_SESSION)){//Si la sesión no está vacía quiere decir que tenenmos 
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Bienvenido a Tu Scouting!</h1>
                                     </div>
-                                    <form class="user" action="funciones/login.php" method="post">
+                                    <form class="user" action="" method="post">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="emailUser" name="emailUser" aria-describedby="emailHelp"
@@ -63,7 +63,10 @@ if(!empty($_SESSION)){//Si la sesión no está vacía quiere decir que tenenmos 
                                             <input type="password" class="form-control form-control-user"
                                                 id="passwordUser" name="passwordUser" placeholder="Contraseña" required>
                                         </div>
-                                        
+                                        <?php
+                                            //include "funciones/funciones_usuario.php";
+                                            login();
+                                        ?>
                                         <div class="text-center">
 											<a class="small" id="textoError"></a>
 										</div>
