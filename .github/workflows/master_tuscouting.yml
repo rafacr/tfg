@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'tuscouting'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2DA6506AA5D8442F99D93B6801679AD4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E7B5F6A730234D3388303AB38774F58E }}
           package: .
