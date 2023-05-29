@@ -63,7 +63,10 @@ if(!empty($_SESSION)){//Si la sesión no está vacía quiere decir que tenenmos 
                                             <input type="password" class="form-control form-control-user"
                                                 id="passwordUser" name="passwordUser" placeholder="Contraseña" required>
                                         </div>
-                                        
+                                        <?php
+                                            //include "funciones/funciones_usuario.php";
+                                            login();
+                                        ?>
                                         <div class="text-center">
 											<a class="small" id="textoError"></a>
 										</div>
@@ -73,10 +76,6 @@ if(!empty($_SESSION)){//Si la sesión no está vacía quiere decir que tenenmos 
                                                 <label class="custom-control-label" for="customCheck">Recordarme</label>
                                             </div>
                                         </div>
-                                        <?php
-                                            //include "funciones/funciones_usuario.php";
-                                            login();
-                                        ?>
 										<input name="btnLogin" type="submit" class="btn btn-primary btn-user btn-block" value="Acceder">
                                                                                 
                                     </form>
